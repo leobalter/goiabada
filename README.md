@@ -71,11 +71,17 @@ TODO: more documentation on that
 
 ### Assertions:
 
-- `ok( value[, message ] )`: pass when the value is a true-like value. e.g.: `true`, `1` or `"non-empty string"`.
+- `ok( value[, message ] )`: evaluates the value to true. e.g.: `true`, `1` or `"non-empty string"`.
+  - Returns the result.
+- `notOk( value[, message ] )`: evaluates the value to false.
   - Returns the result.
 - `equal( value, expected[, message ] )`: non strict comparison (`==`).
   - Returns the result.
+- `notEqual( value, expected[, message ] )`: negative non strict comparison (`!=`).
+  - Returns the result.
 - `same( value, expected[, message ] )`: strict comparison (`===`).
+  - Returns the result.
+- `notSame( value, expected[, message ] )`: negative strict comparison (`!==`).
   - Returns the result.
 - `throws( fn[, message ] )`: passes when the given fn throws an error.
   - Returns the error.
