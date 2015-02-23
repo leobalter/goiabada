@@ -5,6 +5,7 @@ var test = goiabada.test.bind( goiabada );
 
 test( "basic API", t => {
     t.ok( true, "ok assertion pass" );
+    t.ok( "foo" );
     t.equal( 1, "1", "equal assertion pass" );
     t.same( 2, 2, "same assertion pass" );
     t.throws( () => {
@@ -31,7 +32,7 @@ test( "basic API with failing tests", t => {
     t.expect( 2 );
     t.ok( false, "ok assertion pass" );
     t.equal( 1, 2, "equal assertion pass" );
-    t.same( 1, 2, "same assertion pass" );
+    t.same( 2, "2", "same assertion pass" );
     t.throws( () => {
         return "foo";
     });
