@@ -2,6 +2,24 @@
 
 This is an experimental project providing a very simple (and incomplete) unit test tool written using ES6 features.
 
+![goiaba](https://cloud.githubusercontent.com/assets/301201/6330134/e3237ddc-bb43-11e4-89c1-169637aa7108.jpg)
+
+## Rationale
+
+I saw a lot of people very excited with the new changes on [babel (6to5)](https://babeljs.io/) and after talking to some friends at work, I decided to play with some ES6 doing this unit test framework using a lot of its features.
+
+So far it's using several ES6 features together, like:
+
+- Classes
+- Promises
+- Generators (++ to this one as it solved the async tests order like a charm)
+- Arrow functions
+- template strings
+- parameters destructuring
+- shorthand properties
+
+Reviews, comments and PR are more than welcome! I'll love any feedback.
+
 ## Development
 
 Clone it!
