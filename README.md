@@ -61,9 +61,15 @@ If you prefer calling only `test`, without the namespace, you can add this line:
 var test = goiabada.test.bind( goiabada );
 ```
 
-### API
+### Browser
 
-#### Assertions:
+Goiabada uses a Browserify build for browser usage.
+
+TODO: more documentation on that
+
+## API
+
+### Assertions:
 
 - `ok( value[, message ] )`: pass when the value is a true-like value. e.g.: `true`, `1` or `"non-empty string"`.
   - Returns the result.
@@ -74,7 +80,7 @@ var test = goiabada.test.bind( goiabada );
 - `throws( fn[, message ] )`: passes when the given fn throws an error.
   - Returns the error.
 
-#### Helpers
+### Helpers
 
 - `expect( n )`: expects a number of given assertions to run from that point.
   - The last expected assertion will trigger the `end()` method.
@@ -84,12 +90,12 @@ var test = goiabada.test.bind( goiabada );
 - `remaining`: if you call `expect(n)`, this will receive a number value with the remaining tests to run.
 - `error`: push an error to the test log
 
-#### Logs
+### Logs
 
 - `assertions`: the executed assertions
 - `passed`: the passing assertions
 - `failed`: the failing assertions
 
-### The Logger
+## The Logger
 
 You can set a different logger on **Goiabada**. It's not standardized yet but my goal is to follow the possible conventions from https://github.com/js-reporters/js-reporters

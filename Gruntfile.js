@@ -20,13 +20,28 @@ module.exports = function(grunt) {
             },
             all: SOURCE
         },
+        browserify: {
+            options: {
+                transform: [ "babelify" ]
+            },
+            dist: {
+                files: {
+                    "build/goiabada.browser.js": "lib/goiabada.js"
+                }
+            },
+            test: {
+                files: {
+                    "build/tests/browser.js": "tests/index.js"
+                }
+            }
+        },
         watch: {
             all: {
                 files: SOURCE,
-                tasks: ["default"]
+                tasks: [ "default" ]
             }
         }
     });
 
-    grunt.registerTask("default", ["jshint", "jscs"]);
+    grunt.registerTask( "default", [ "jshint", "jscs", "browserify" ] );
 };
