@@ -45,8 +45,6 @@ test( "async", t => {
     setTimeout( () => {
         t.ok( true, "async assertion 1" );
     }, 13 );
-}).then( t => {
-    t.ok( true, "tests are promiseable" );
 });
 
 test( "basic API with failing tests", t => {
