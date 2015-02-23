@@ -59,3 +59,7 @@ test( "basic API with failing tests", t => {
     t.error( "custom assertion error" );
     t.end( false );
 });
+
+test( "throws and error", () => {
+    throw "foo";
+});
