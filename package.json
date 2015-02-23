@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": "git@github.com:leobalter/goiabada.git",
   "scripts": {
-    "test": "node tests/index.js"
+    "test": "./node_modules/.bin/istanbul cover tests/index.js"
   },
   "author": "Leo Balter",
   "license": "MIT",
@@ -20,6 +20,7 @@
     "grunt-contrib-jshint": "^0.11.0",
     "grunt-contrib-watch": "^0.6.1",
     "grunt-jscs": "^1.5.0",
+    "istanbul": "^0.3.6",
     "load-grunt-tasks": "^3.1.0"
   }
 }
