@@ -47,19 +47,19 @@ var test = goiabada.test.bind( goiabada );
 
 #### Assertions:
 
-- `ok( value[, message ] )`: pass when the value is true.
-  Returns the result.
+- `ok( value[, message ] )`: pass when the value is a true-like value. e.g.: `true`, `1` or `"non-empty string"`.
+  - Returns the result.
 - `equal( value, expected[, message ] )`: non strict comparison (`==`).
-  Returns the result.
+  - Returns the result.
 - `same( value, expected[, message ] )`: strict comparison (`===`).
-  Returns the result.
+  - Returns the result.
 - `throws( fn[, message ] )`: passes when the given fn throws an error.
-  Returns the error.
+  - Returns the error.
 
 #### Helpers
 
 - `expect( n )`: expects a number of given assertions to run from that point.
-  The last expected assertion will trigger the `end()` method.
+  - The last expected assertion will trigger the `end()` method.
 - `end()`: when triggered manually, it will close the test and:
   - trigger an error if you still have remaining tests set from `expect()`;
   - trigger an error for each of consecutive assertion in the same test block.
