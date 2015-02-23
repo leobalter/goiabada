@@ -1,7 +1,6 @@
 import Goiabada from "../index.js";
 
-var goiabada = new Goiabada();
-var test = goiabada.test.bind( goiabada );
+var test = Goiabada.prototype.test.bind( new Goiabada() );
 
 test( "basic API", t => {
     t.ok( true, "ok assertion pass" );
