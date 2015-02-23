@@ -1,3 +1,21 @@
 {
-    "esnext": true
+    "esnext": true,
+    "bitwise": true,
+    "curly": true,
+    "eqeqeq": false,
+    "immed": true,
+    "latedef": true,
+    "maxlen": 120,
+    "newcap": true,
+    "noarg": true,
+    "nonbsp": true,
+    "nonew": true,
+    "trailing": true,
+    "undef": true,
+    "unused": true,
+
+    "globals": {
+        "console": true,
+        "setTimeout": true
+    }
 }

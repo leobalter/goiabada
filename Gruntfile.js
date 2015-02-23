@@ -1,3 +1,5 @@
+/*jshint node:true*/
+
 module.exports = function(grunt) {
     require("load-grunt-tasks")(grunt);
 
@@ -37,7 +39,7 @@ module.exports = function(grunt) {
         },
         watch: {
             all: {
-                files: SOURCE,
+                files: [ ".jshintrc", SOURCE ],
                 tasks: [ "default" ]
             }
         }
