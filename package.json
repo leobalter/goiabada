@@ -1,6 +1,6 @@
 {
   "name": "goiabada",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Experimental es6 unit tests project",
   "main": "index.js",
   "repository": "git@github.com:leobalter/goiabada.git",
