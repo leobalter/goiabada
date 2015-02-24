@@ -34,6 +34,8 @@ test( "basic API", t => {
     t.notSame( 1, "1", "1 is not \"1\"" );
 
     t.end();
+}).then( () => {
+    console.log( "test 1" );
 });
 
 test( "async", t => {
@@ -45,7 +47,10 @@ test( "async", t => {
     setTimeout( () => {
         t.ok( true, "async assertion 1" );
     }, 13 );
+}).then( () => {
+    console.log( "test 2" );
 });
+
 
 test( "basic API with failing tests", t => {
     t.expect( 2 );
@@ -58,8 +63,26 @@ test( "basic API with failing tests", t => {
     });
     t.error( "custom assertion error" );
     t.end( false );
+}).then( () => {
+    console.log( "test 3" );
 });
 
-test( "throws and error", () => {
+test( "async", t => {
+    t.expect( 2 );
+    setTimeout( () => {
+        t.ok( true, "async assertion 2" );
+        t.end();
+    }, 26 );
+    setTimeout( () => {
+        t.ok( true, "async assertion 1" );
+    }, 13 );
+}).then( () => {
+    console.log( "test 4" );
+});
+
+test( "throws and error", t => {
+    t.end();
     throw "foo";
+}).then( () => {
+    console.log( "test 5" );
 });
