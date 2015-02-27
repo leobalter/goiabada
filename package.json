@@ -5,7 +5,8 @@
   "main": "index.js",
   "repository": "git@github.com:leobalter/goiabada.git",
   "scripts": {
-    "test": "./node_modules/.bin/istanbul cover tests/index.js"
+    "test": "node tests/index.js",
+    "coverage": "./node_modules/.bin/istanbul cover tests/index.js"
   },
   "author": "Leo Balter",
   "license": "MIT",
