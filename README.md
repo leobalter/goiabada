@@ -2,6 +2,8 @@
 
 This is an experimental project providing a very simple (and incomplete) unit test tool written using ES6 features.
 
+[![Code Climate](https://codeclimate.com/github/leobalter/goiabada/badges/gpa.svg)](https://codeclimate.com/github/leobalter/goiabada)
+
 ![goiaba](https://cloud.githubusercontent.com/assets/301201/6330134/e3237ddc-bb43-11e4-89c1-169637aa7108.jpg)
 
 ## Rationale
