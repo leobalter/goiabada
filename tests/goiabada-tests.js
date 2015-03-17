@@ -1,6 +1,7 @@
 import Goiabada from "../index.js";
 
-var test = Goiabada.prototype.test.bind( new Goiabada() );
+var goiabada = new Goiabada();
+var test = goiabada.test.bind( goiabada );
 
 test( "basic API", t => {
     var obj = { foo: "foo" };
@@ -86,3 +87,5 @@ test( "throws and error", t => {
 }).then( () => {
     console.log( "test 5" );
 });
+
+goiabada.start();
