@@ -16,4 +16,4 @@ export default ( test ) => {
         t.end();
         throw "foo";
     });
-}
+};

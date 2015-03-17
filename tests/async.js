@@ -9,4 +9,4 @@ export default ( test ) => {
             t.ok( true, "async assertion 1" );
         }, 13 );
     });
-}
+};
