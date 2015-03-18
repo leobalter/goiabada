@@ -8,6 +8,7 @@
     "test": "node tests/index.js",
     "coverage": "./node_modules/.bin/istanbul cover tests/index.js"
   },
+  "main": "build/commonjs/goiabada.js",
   "author": "Leo Balter",
   "license": "MIT",
   "dependencies": {
@@ -16,9 +17,8 @@
     "lodash": "^3.5.0"
   },
   "devDependencies": {
-    "babelify": "^5.0.3",
     "grunt": "^0.4.5",
-    "grunt-browserify": "^3.4.0",
+    "grunt-babel": "^4.0.0",
     "grunt-contrib-jshint": "^0.11.0",
     "grunt-contrib-watch": "^0.6.1",
     "grunt-jscs": "^1.5.0",

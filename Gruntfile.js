@@ -22,18 +22,15 @@ module.exports = function(grunt) {
             },
             all: SOURCE
         },
-        browserify: {
-            options: {
-                transform: [ "babelify" ]
-            },
+        babel: {
             dist: {
+                options: {
+                    sourceMap: true
+                },
                 files: {
-                    "build/goiabada.browser.js": "lib/goiabada.js"
-                }
-            },
-            test: {
-                files: {
-                    "build/tests/browser.js": "tests/index.js"
+                    "build/commonjs/goiabada.js": "lib/goiabada.js",
+                    "build/commonjs/assert.js": "lib/assert.js",
+                    "build/commonjs/logger.js": "lib/logger.js"
                 }
             }
         },
@@ -45,5 +42,5 @@ module.exports = function(grunt) {
         }
     });
 
-    grunt.registerTask( "default", [ "jshint", "jscs", "browserify" ] );
+    grunt.registerTask( "default", [ "jshint", "jscs", "babel" ] );
 };
