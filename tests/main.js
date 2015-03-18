@@ -1,4 +1,4 @@
-import Goiabada from "../index.js";
+import Goiabada from "../lib/goiabada.js";
 import assertions from "./assertions.js";
 import async from "./async.js";
 import failing from "./failing.js";
