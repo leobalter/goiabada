@@ -59,6 +59,12 @@ goiabada.test( assert => {
 });
 ```
 
+Call `start` to run the test queue from all the tests you declared.
+
+```js
+goiabada.start();
+```
+
 If you prefer calling only `test`, without the namespace, you can add this line:
 
 ```js
@@ -67,30 +73,27 @@ var test = goiabada.test.bind( goiabada );
 
 ### Browser
 
-Goiabada uses a Browserify build for browser usage.
+There's no current browser implementation of Goiabada, but I have plans to make it work, as soon as I can find something clean and simple to make bundle the source files into an UMD source using a single namespace.
 
-TODO: more documentation on that
+Help wanted!
 
 ## API
 
 ### Assertions:
 
 - `ok( value[, message ] )`: evaluates the value to true. e.g.: `true`, `1` or `"non-empty string"`.
-  - Returns the result.
 - `notOk( value[, message ] )`: evaluates the value to false.
-  - Returns the result.
 - `equal( value, expected[, message ] )`: non strict comparison (`==`).
-  - Returns the result.
 - `notEqual( value, expected[, message ] )`: negative non strict comparison (`!=`).
-  - Returns the result.
+- `deepEqual( value, expected[, message ] )`: deep equal comparison.
+- `notDeepEqual( value, expected[, message ] )`: negative deep equal comparison.
 - `same( value, expected[, message ] )`: strict comparison (`===`).
-  - Returns the result.
 - `notSame( value, expected[, message ] )`: negative strict comparison (`!==`).
-  - Returns the result.
 - `throws( fn[, message ] )`: passes when the given fn throws an error.
-  - Returns the error.
 
-### Helpers
+All assertions return a boolean representing the result, except throws which returns the error.
+
+### Assert helpers
 
 - `expect( n )`: expects a number of given assertions to run from that point.
   - The last expected assertion will trigger the `end()` method.
