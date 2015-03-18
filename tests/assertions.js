@@ -32,4 +32,37 @@ export default ( test ) => {
 
         t.end();
     });
+
+    test( "deepEqual", t => {
+        var obj = {
+                foo: "foo",
+                bar: [ 1, 5, 7 ],
+                baz: null
+            },
+            other = {
+                foo: "foo",
+                bar: [ 1, 5, 7 ],
+                baz: null
+            };
+
+        t.deepEqual( obj, other );
+
+        t.end();
+    });
+
+    test( "notDeepEqual", t => {
+        var obj = {
+                foo: "foo",
+                bar: [ 1, 5, 7 ],
+                baz: null
+            },
+            other = {
+                foo: "foo",
+                bar: [ 1, 5, 7 ]
+            };
+
+        t.notDeepEqual( obj, other );
+
+        t.end();
+    });
 };
