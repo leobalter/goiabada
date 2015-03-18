@@ -4,6 +4,10 @@ This is an experimental project providing a very simple (and incomplete) unit te
 
 [![Code Climate](https://codeclimate.com/github/leobalter/goiabada/badges/gpa.svg)](https://codeclimate.com/github/leobalter/goiabada)
 
+[![Build Status](https://travis-ci.org/leobalter/goiabada.svg?branch=master)](https://travis-ci.org/leobalter/goiabada)
+
+[![Coverage Status](https://coveralls.io/repos/leobalter/goiabada/badge.svg)](https://coveralls.io/r/leobalter/goiabada)
+
 ![goiaba](https://cloud.githubusercontent.com/assets/301201/6330134/e3237ddc-bb43-11e4-89c1-169637aa7108.jpg)
 
 ## Rationale
