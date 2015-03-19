@@ -7,7 +7,7 @@
   "scripts": {
     "test": "grunt jshint jscs && node tests/index.js",
     "coverage": "./node_modules/.bin/istanbul cover tests/index.js",
-    "ci": "grunt && npm run-script coverage && grunt coveralls"
+    "ci": "grunt && npm run-script coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
   },
   "author": "Leo Balter",
   "license": "MIT",
@@ -17,11 +17,11 @@
     "lodash": "^3.5.0"
   },
   "devDependencies": {
+    "coveralls": "^2.11.2",
     "grunt": "^0.4.5",
     "grunt-babel": "^4.0.0",
     "grunt-contrib-jshint": "^0.11.0",
     "grunt-contrib-watch": "^0.6.1",
-    "grunt-coveralls": "^1.0.0",
     "grunt-jscs": "^1.5.0",
     "istanbul": "^0.3.6",
     "load-grunt-tasks": "^3.1.0"

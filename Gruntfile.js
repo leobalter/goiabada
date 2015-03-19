@@ -34,13 +34,6 @@ module.exports = function(grunt) {
                 }
             }
         },
-        coveralls: {
-            options: {
-
-                // LCOV coverage file relevant to every target
-                src: 'coverage/lcov.info'
-            }
-        },
         watch: {
             all: {
                 files: [ ".jshintrc", SOURCE ],
