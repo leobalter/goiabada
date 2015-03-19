@@ -16,6 +16,7 @@
 
     "globals": {
         "console": true,
-        "setTimeout": true
+        "setTimeout": true,
+        "process": true
     }
 }
