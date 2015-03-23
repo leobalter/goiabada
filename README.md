@@ -2,6 +2,7 @@
 
 This is an experimental project providing a very simple (and incomplete) unit test tool written using ES6 features.
 
+[![npm version](https://badge.fury.io/js/goiabada.svg)](http://badge.fury.io/js/goiabada)
 [![Code Climate](https://codeclimate.com/github/leobalter/goiabada/badges/gpa.svg)](https://codeclimate.com/github/leobalter/goiabada)
 [![Build Status](https://travis-ci.org/leobalter/goiabada.svg?branch=master)](https://travis-ci.org/leobalter/goiabada)
 [![Coverage Status](https://coveralls.io/repos/leobalter/goiabada/badge.svg)](https://coveralls.io/r/leobalter/goiabada)
