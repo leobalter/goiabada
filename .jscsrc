@@ -1,3 +1,7 @@
 {
-    "esnext": true
+    "esnext": true,
+    "maximumLineLength": 120,
+    "disallowTrailingWhitespace": true,
+    "requireParenthesesAroundIIFE": true,
+    "requireCapitalizedConstructors": true
 }
