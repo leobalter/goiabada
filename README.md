@@ -1,4 +1,4 @@
-# Goiabada
+# ![Goiabada](images/goiabada-text.png)
 
 This is an experimental project providing a very simple (and incomplete) unit test tool written using ES6 features.
 
@@ -8,8 +8,6 @@ This is an experimental project providing a very simple (and incomplete) unit te
 [![Coverage Status](https://coveralls.io/repos/leobalter/goiabada/badge.svg)](https://coveralls.io/r/leobalter/goiabada)
 [![Dependency Status](https://david-dm.org/leobalter/goiabada.svg)](https://david-dm.org/leobalter/goiabada)
 [![devDependency Status](https://david-dm.org/leobalter/goiabada/dev-status.svg)](https://david-dm.org/leobalter/goiabada#info=devDependencies)
-
-![goiaba](https://cloud.githubusercontent.com/assets/301201/6330134/e3237ddc-bb43-11e4-89c1-169637aa7108.jpg)
 
 ## Rationale
 
